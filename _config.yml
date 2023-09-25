@@ -7,11 +7,11 @@ title: Coral Island Guide
 email: genesy.dev@gmail.com
 description: Unofficial companion app for Coral Island
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://mobileapplandingpage.learn.uno" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://coralisland.guide" # the base hostname & protocol for your site, e.g. http://example.com
 theme_color: '#efeeff'
-twitter_username: sandochee
-github_username:  sandoche
-author: Sandoche Adittane
+twitter_username: genesy
+github_username:  genesy
+author: Gene Sy
 logo: assets/images/large-logo.png
 twitter:
   username: sandochee
