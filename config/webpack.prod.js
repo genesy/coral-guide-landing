@@ -32,8 +32,7 @@ module.exports = Merge(CommonConfig, {
 
     new CopyWebpackPlugin({
       patterns: [
-          { from: 'public' },
-          { to: '_site'}
+        { from: 'public', to: '_site' }
       ]
     })
   ],
