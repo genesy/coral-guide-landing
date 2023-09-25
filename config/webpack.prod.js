@@ -6,6 +6,7 @@ const webpack = require('webpack');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
 const TerserPlugin = require("terser-webpack-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = Merge(CommonConfig, {
   output: {
@@ -28,5 +29,12 @@ module.exports = Merge(CommonConfig, {
       debug: false,
     }),
     new ImageminPlugin({ test: /\.(jpe?g|png|gif|svg)$/i }),
+
+    new CopyWebpackPlugin({
+      patterns: [
+          { from: 'public' },
+          { to: '_site'}
+      ]
+    })
   ],
 });
